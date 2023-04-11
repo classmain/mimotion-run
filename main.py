@@ -141,6 +141,7 @@ class MiMotion():
                     "source": "com.xiaomi.hm.health",
                     "third_name": "email",
                 }
+            print('-----data2：----',data2)
             r2 = requests.post(url=url2, data=data2, headers=headers).json()
             login_token = r2["token_info"]["login_token"]
             userid = r2["token_info"]["user_id"]
